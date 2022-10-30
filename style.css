@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  font-size: 18px;
+}
+@font-face {
+  font-family: Space Grotesk;
+  src: url(https://fonts.google.com/specimen/Space+Grotesk);
+}
+.row {
+  width: auto;
+  height: 700px;
+  display: flex;
+  background-color: white;
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.col-bs-6 {
+  margin: 20px;
+  /* border: 1px solid black; */
+  height: 500px;
+  width: auto;
+}
+.card {
+  width: 430px;
+  height: 220px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  margin: 40px;
+  color: white;
+}
+#card-logo img {
+  margin: 20px 0 60px;
+}
+.front-card-content {
+  margin: 30px;
+}
+.card-front {
+  background-image: url(images/bg-card-front.png);
+  background-clip: border-box;
+
+  position: relative;
+}
+#card-number {
+  font-weight: 800;
+  font-size: 2rem;
+}
+#card-date {
+  position: fixed;
+  left: 40%;
+}
+.name-date {
+  display: flex;
+  margin-top: 20px;
+}
+
+.card-back {
+  background-image: url(images/bg-card-back.png);
+  background-position-x: center;
+  background-clip: border-box;
+  position: relative;
+  margin-left: 100px;
+}
+
+.date {
+  width: 100px;
+}
+#cvc {
+  width: 200px;
+}
+#card-cvc {
+  position: relative;
+  top: 50%;
+  left: 70%;
+}
+form {
+  margin-top: 100px;
+}
+input {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px 0 10px;
+}
+.submit-btn {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  /* margin: 0 auto; */
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+.errorMsg {
+  color: rgb(175, 40, 6);
+  font-size: 1rem;
+  margin: 0 10px 10px 10px;
+}

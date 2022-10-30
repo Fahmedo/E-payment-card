@@ -1,0 +1,68 @@
+@media (min-width: 375px) and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    background-image: url(images/bg-main-mobile.png);
+  }
+  .col-bs-6 {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    width: 100%;
+  }
+  .card {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 150px;
+  }
+  .card-front {
+    z-index: 1;
+    margin-top: 130px;
+    position: absolute;
+  }
+  .card-back {
+    position: absolute;
+    margin-left: 70px;
+    overflow-x: hidden;
+  }
+  .front-card-content {
+    margin: 20px;
+  }
+  #card-logo img {
+    width: 50px;
+    margin: 0px 0 30px;
+  }
+  #card-number {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  .name-date {
+    margin-top: 5px;
+  }
+  #card-date {
+    left: 60%;
+  }
+
+  #card-cvc {
+    margin: 0px;
+    width: fit-content;
+    top: 70%;
+  }
+  .date {
+    width: 75px;
+  }
+  #cvc {
+    width: 150px;
+  }
+  form {
+    padding: 0;
+  }
+}

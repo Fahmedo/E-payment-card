@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaymentCard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="MQstyle.css" />
+  </head>
+  <body>
+    <main class="row">
+      <section class="col-bs-6">
+        <div class="card card-front">
+          <div class="front-card-content">
+            <div id="card-logo">
+              <img src="images/card-logo.svg" alt="logo" />
+            </div>
+            <div id="card-number">0000 0000 0000 0000</div>
+            <div class="name-date">
+              <div id="card-name" class="card-name">Jane Appleseed</div>
+              <div id="card-date">
+                <span id="card-month">00</span>/<span id="card-year">00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-back">
+          <div id="card-cvc">000</div>
+        </div>
+      </section>
+      <section class="col-bs-6">
+        <div class="form">
+          <form action="form">
+            <label for="number"
+              >CARD NUMBER <br />
+              <input
+                type="text"
+                placeholder="eg. 1234567890123000"
+                name="number"
+                id="input-number"
+            /></label>
+            <div class="errorMsg errorMsg-number"></div>
+            <label for="name"
+              >CARDHOLDER NAME <br />
+              <input
+                type="text"
+                placeholder="Jane Appleseed"
+                name="name"
+                id="input-name"
+              />
+            </label>
+            <div class="errorMsg errorMsg-name"></div>
+
+            <label for=""
+              >EXP. DATE (MM/YY) <span>CVC</span><br />
+              <input
+                type="text"
+                placeholder="MM"
+                name="month"
+                class="date"
+                id="month"
+              />
+              <input
+                type="text"
+                placeholder="YY"
+                name="year"
+                class="date"
+                id="year"
+              />
+              <input
+                type="text"
+                placeholder="eg. 123"
+                name=""
+                class="date"
+                id="cvc"
+              />
+            </label>
+            <div class="errorMsg errorMsg-others"></div>
+            <div class="submit-btn" onclick="submit()">Confirm</div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
